@@ -1,0 +1,15 @@
+.sources{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.arrow-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card-wrapper{
+    background-color: gainsboro;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin : 20px;
+}
