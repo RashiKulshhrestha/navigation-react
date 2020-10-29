@@ -6,7 +6,8 @@ class Card extends Component {
         super(props);
             this.state ={
                 showOption1 : true,
-                showOption2 : true
+                showOption2 : true,
+                showIngestion: false
             }
     }
 handleClick1 = () =>{
@@ -17,6 +18,11 @@ handleClick1 = () =>{
 handleClick2 = () =>{
     this.setState({
         showOption2 : false
+    })
+}
+handleIngestion = () => {
+    this.setState({
+        showIngestion : true
     })
 }
     render(){
@@ -42,6 +48,12 @@ handleClick2 = () =>{
                     </div> : null }
                 </div>
                 
+            </div>
+            <div>
+                <button onClick={this.handleIngestion}>Procced for Ingestion</button>
+                {this.state.showIngestion ? <div>
+                    <button>Start Ingestion</button>
+                </div> : null}
             </div>
             <img src="data:image/png;base64,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"
                     alt="youtube" width="50px" height="50px"/>

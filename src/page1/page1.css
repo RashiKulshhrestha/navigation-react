@@ -13,3 +13,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin : 20px;
 }
+.manage-source-btn{
+    background-color: rgb(131, 131, 243);
+    margin:30px;
+    height: 80px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(180, 180, 241);
+}
+.manage-team-btn{
+    margin:30px;
+    height: 80px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px rgb(117, 117, 119);
+}
